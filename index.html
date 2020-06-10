@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>GitHub User Information</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Personal CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body class="bod">
+    <script src="script.js"></script>
+    <div class="container-fluid col-md-6">
+      <h1>GitHub user Informations using GitHub API</h1>
+      <img
+        class="logo"
+        src="https://github.githubassets.com/images/modules/logos_page/Octocat.png"
+        alt=""
+        srcset=""
+      />
+      <div class="form-group input-group mb-3">
+        <input
+          id="search"
+          type="text"
+          class="form-control"
+          placeholder="Enter the account name"
+        />
+        <div class="input-group-append">
+          <button type="button" class="btn btn-primary" onclick="pullAccountInfo()">
+            Search
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid col-md-12">
+      <h2>Fetched Data</h2>
+      <table class="table table-bordered" id="infoDisplayTable">
+        <thead class="thead-light">
+          <tr>
+            <th>Avatar</th>
+            <th>Name</th>
+            <th>Repositories</th>
+            <th>Followers</th>
+            <th>Location</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+.bod {
+  background-color: #222831;
+  color: #eeeeee;
+  font-family: "Nunito", sans-serif;
+  text-align: center;
+}
+
+h1 {
+  color: #9cdaf0;
+}
+
+table {
+  font-family: "Open Sans", sans-serif;
+}
+
+td {
+  color: #eeeeee;
+}
+
+img {
+  border-radius: 50%;
+  width: 40%;
+}
+
+.logo {
+  border-radius: 0% !important;
+  width: 30% !important;
+}
